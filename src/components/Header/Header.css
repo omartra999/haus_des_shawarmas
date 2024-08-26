@@ -1,0 +1,26 @@
+.header {
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  background-image: url('../../assests/header.png'); /* Set the background image */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  display: flex; /* Use flexbox to center the content */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  position: relative; /* Relative positioning for absolute children */
+}
+
+.header h1 {
+  color: #f0e68c;
+  font-size: 4em;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header p {
+  color: #f0e68c;
+  font-size: 1.5em;
+  font-weight: 600;
+}
