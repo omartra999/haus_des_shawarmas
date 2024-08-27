@@ -5,26 +5,27 @@
     justify-content: center;
 }
 
-@keyframes pop {
-    0% {
-        transform: scale(0.2);
-        opacity: 0;
-    }
-    20% {
-        transform: scale(1.1);
-        opacity: 0.7;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 4;
-    }
-}
-.header_content,
-.app__nav li
-.navbar a {
-    animation: pop 6 ease forwards;
-}
 
-    
-
+body {
+    font-family: 'Poppins', sans-serif; /* Default font for all text */
+  }
+  
+  h1 {
+    font-family: 'Poppins', sans-serif; /* Apply the same font to h1 or choose a different one */
+    font-weight: 700; /* Use a bold font-weight for h1 */
+    font-size: 3em; /* Adjust size as needed */
+    color: #ffffff; /* White color for better visibility on a dark background */
+    text-transform: uppercase; /* Make text uppercase for a cool effect */
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a slight shadow for a 3D effect */
+  }
+  
+  p {
+    font-size: 1.2em; /* Slightly increase font size for paragraphs */
+    color: #ffffff; /* Ensure paragraph text is readable */
+    margin: 0;
+    padding: 0;
+    line-height: 1.5; /* Increase line height for better readability */
+  }
   
