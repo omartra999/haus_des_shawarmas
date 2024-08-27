@@ -1,0 +1,71 @@
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import images from "../../constants/images";
+import "./Spezielle.css";
+
+// Updated items array
+const items = [
+  { img: images.salad, text: "Fresh Salad", description: "frische salat" },
+  { img: images.sandwish, text: "Sandwich", description: "leckeres baguette" },
+  { img: images.shawarma, text: "Shawarma", description: "das beste was es gibt" },
+  { img: images.taco, text: "Tacos", description: "auch tacos haben wir" },
+  { img: images.hummus, text: "Hummus", description: "wer kennt hummus nicht?" }
+];
+
+function Spezielle() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({
+        opacity: [0, 1],
+        x: [50, 0],
+        transition: { duration: 0.8, ease: "easeOut" },
+      });
+    }
+  }, [inView, controls]);
+
+  return (
+    <div className="spezielle" ref={ref}>
+      <motion.h2
+        animate={controls}
+        initial={{ opacity: 0, x: 50 }}
+        className="special-title"
+      >
+        Spezielles Angebot
+      </motion.h2>
+      <div className="special-items-container">
+        {items.map((item, index) => (
+          <motion.div
+            key={index}
+            animate={controls}
+            initial={{ opacity: 0, x: 50 }}
+            className="special-item"
+          >
+            <div className="special-item-image">
+              <motion.img
+                className="item-image"
+                src={item.img}
+                alt={item.text}
+                initial={{ opacity: 0 }}
+                animate={controls}
+              />
+            </div>
+            <div className="special-item-text">
+              <p className="item-text">{item.text}</p>
+              <p className="item-description">{item.description}</p>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Spezielle;

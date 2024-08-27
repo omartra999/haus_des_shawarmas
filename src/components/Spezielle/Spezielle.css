@@ -1,0 +1,97 @@
+/* Spezielle.css */
+
+.spezielle {
+    padding: 20px;
+    background-color: #f9f9f9; /* Background color for the section */
+  }
+  
+  .special-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .special-items-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default to three columns */
+    gap: 20px; /* Space between grid items */
+  }
+  
+  /* Adjust the grid layout for the bottom row to center items */
+  .special-items-container > :nth-child(4),
+  .special-items-container > :nth-child(5) {
+    grid-column: span 1; /* Span 1 column each */
+  }
+  
+  @media (min-width: 768px) {
+    .special-items-container {
+      grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+      grid-template-areas:
+        "item1 item2 item3"
+        "item4 item5 item6"; /* Layout for bottom row with centered items */
+    }
+  
+    /* Adjust layout for the bottom two items to be centered */
+    .special-item:nth-child(4) {
+      grid-area: item4;
+    }
+  
+    .special-item:nth-child(5) {
+      grid-area: item5;
+    }
+    
+  }
+  
+  @media (max-width: 768px) {
+    .special-items-container {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    }
+  }
+  
+  .special-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    transition: 0.6s ease;
+  }
+
+  .special-item:hover{
+    background-color: aqua;
+    scale: 0.9;
+  }
+  
+  .special-item-image {
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+  }
+  
+  .item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .special-item-text {
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .item-text {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .item-description {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #777;
+  }
+  
