@@ -24,9 +24,9 @@ function Spezielle() {
   useEffect(() => {
     if (inView) {
       controls.start({
-        opacity: [0, 1],
+        opacity: [ 1],
         x: [50, 0],
-        transition: { duration: 0.8, ease: "easeOut" },
+        transition: { duration: 0.5, ease: "easeOut" },
       });
     }
   }, [inView, controls]);
@@ -35,7 +35,7 @@ function Spezielle() {
     <div className="spezielle" ref={ref}>
       <motion.h2
         animate={controls}
-        initial={{ opacity: 0, x: 50 }}
+        initial={{ opacity: 0, x: -50 }}
         className="special-title"
       >
         Spezielles Angebot
@@ -45,7 +45,7 @@ function Spezielle() {
           <motion.div
             key={index}
             animate={controls}
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: 80 }}
             className="special-item"
           >
             <div className="special-item-image">

@@ -1,61 +1,119 @@
-/* Navbar.css */
-
 .navbar {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    margin: 0 auto;
-    background-color: transparent; 
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    z-index: 1000; 
-  }
-  
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin: 0 auto;
+  background-color: transparent; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 1000; 
+}
+
+.app__nav {
+  list-style-type: none;
+  display: flex;
+  gap: 20px; 
+  padding: 0; 
+}
+
+.app__nav li {
+  display: inline-block;
+}
+
+.app__nav a {
+  text-decoration: none; 
+  color: #ffffff; 
+  font-weight: bold; 
+  font-size: 18px; 
+  transition: color 0.3s; 
+}
+
+.navbar--scrolled {
+  background-color: #2d2c2c;
+}
+
+.app__nav a:hover {
+  color: #f0e68c; 
+}
+
+.hamburger-menu {
+  display: none; /* Hidden by default, shown on smaller screens */
+  font-size: 28px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.hamburger-menu:hover {
+  color: #f0e68c; /* Hover color */
+}
+
+.navbar img {
+  width: 70%;
+  height: 50%; 
+  cursor: pointer;
+  margin: 0 auto; 
+  transition: 0.3s ease-in-out;
+}
+
+.navbar a {
+  margin-left: 10px; 
+  color: #ffffff; 
+  font-size: 24px; 
+  transition: color 0.3s; 
+}
+
+.navbar a:hover {
+  color: #f0e68c; 
+}
+
+.navbar img:hover {
+  scale: 1.2;
+}
+
+@media (max-width: 768px) {
   .app__nav {
-    list-style-type: none;
-    display: flex;
-    gap: 20px; 
-    padding: 0; 
+      display: flex; /* Show nav items on smaller screens */
+      flex-direction: column;
+      align-items: center;
+      background-color: #2d2c2c; /* Same as scrolled background */
+      position: fixed;
+      top: 0; /* Align to the top of the viewport */
+      left: 0; /* Align to the left of the viewport */
+      width: 100%;
+      height: 100vh; /* Cover the whole viewport height */
+      padding: 60px 0; /* Adjust padding to make space for the hamburger menu */
+      transform: translateY(-100%); /* Hide by default */
+      transition: transform 0.3s ease-in-out; /* Smooth animation */
+      z-index: 1001; /* Ensure dropdown is above other content */
   }
-  
-  .app__nav li {
-    display: inline-block;
+
+  .app__nav.app__nav--open {
+      transform: translateY(0); /* Show the menu */
   }
-  
-  .app__nav a {
-    text-decoration: none; 
-    color: #ffffff; 
-    font-weight: bold; 
-    font-size: 18px; 
-    transition: color 0.3s; 
+
+  .hamburger-menu {
+      display: block; /* Show hamburger menu on smaller screens */
   }
-  .navbar--scrolled{
-    background-color: #2d2c2c;
-  }
-  .app__nav a:hover {
-    color:#f0e68c; 
-  }
-  
-  .logo {
-    width: 70%;
-    height: 50%; 
-    cursor: pointer;
-    margin: 0 auto; 
-    transition: 0.3s ease-in-out;
-  }
-  
+
   .navbar a {
-    margin-left: 10px; 
-    color: #ffffff; 
-    font-size: 24px; 
-    transition: color 0.3s; 
+      font-size: 18px; /* Smaller icons for smaller screens */
   }
-  
-  .navbar a:hover {
-    color: #f0e68c; 
+
+  .close-menu {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 30px;
+      color: #ffffff;
+      cursor: pointer;
+      transition: color 0.3s;
+      z-index: 1002; /* Ensure it is above the menu content */
   }
-  .navbar img:hover{
-    scale: 1.2
+
+  .close-menu:hover {
+      color: #f0e68c; /* Hover color */
   }
+}

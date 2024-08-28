@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Header, Spezielle, Besondere, Footer } from '../../components'
+import { Navbar, Header, Spezielle, AboutUs, Footer } from '../../components'
 import './Home.css'
 
 const Home = function Home(){
@@ -8,6 +8,7 @@ const Home = function Home(){
             <Navbar />
             <Header />
             <Spezielle />
+            <AboutUs />
         </div>
     )
 }
