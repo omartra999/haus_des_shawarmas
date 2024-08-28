@@ -1,14 +1,12 @@
 import React from 'react';
 import images from '../../constants/images'; // Adjust the path as needed
-import './AboutUs.css'; // Make sure to create this CSS file
+import './AboutUs.css'; // Ensure this CSS file is correct
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 function AboutUs() {
   const { ref, inView } = useInView({
     triggerOnce: true,
-
-    
     threshold: 0.2,
   });
 
@@ -19,7 +17,7 @@ function AboutUs() {
       animationControls.start({
         opacity: 1,
         x: 0,
-        transition: { duration: 0.8, ease: 'easeOut' },
+        transition: { duration: 0., ease: 'easeOut' }, // Ensure smooth transition
       });
     } else {
       animationControls.start({
@@ -34,6 +32,7 @@ function AboutUs() {
       className="about-us-container"
       ref={ref}
       animate={animationControls}
+      initial={{ opacity: 0, x: -50 }} // Ensure initial state
     >
       <div className="about-us-content">
         <div className="logo-and-icons">

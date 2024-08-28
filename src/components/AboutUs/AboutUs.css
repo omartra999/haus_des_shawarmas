@@ -10,49 +10,51 @@
     position: relative;
     opacity: 0; /* Start as hidden for animation */
     transform: translateX(-50px); /* Start offset for animation */
-    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
-  }
-  
-  .about-us-content {
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+    will-change: transform, opacity; /* Hint to the browser to optimize these properties */
+}
+
+.about-us-content {
     display: flex;
     align-items: center;
     width: 100%;
     max-width: 1200px; /* Adjust as needed */
-  }
-  
-  .logo-and-icons {
+}
+
+.logo-and-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     margin-right: 40px; /* Space between logo/icons and text */
-  }
-  
-  .aboutUs-logo {
+}
+
+.aboutUs-logo {
     width: 100%; /* Increase the logo size */
     height: auto;
     position: relative;
     z-index: 1; /* Ensure logo is above the icons */
-  }
-  .text-content {
+}
+
+.text-content {
     flex: 1;
     text-align: left;
-  }
-  
-  .about-us-header {
+}
+
+.about-us-header {
     font-size: 2rem;
     color: #fff;
     margin-bottom: 10px;
-  }
-  
-  .about-us-text {
+}
+
+.about-us-text {
     color: #ddd;
     font-size: 1rem;
     margin-bottom: 20px;
     line-height: 1.5;
-  }
-  
-  .mehr-lesen-button {
+}
+
+.mehr-lesen-button {
     background-color: #f39c12; /* Button background color */
     color: #fff; /* Text color */
     padding: 10px 20px;
@@ -61,9 +63,9 @@
     font-size: 16px;
     font-weight: bold;
     display: inline-block;
-  }
-  
-  .mehr-lesen-button:hover {
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.mehr-lesen-button:hover {
     background-color: #e67e22; /* Darker shade on hover */
-  }
-  
+}
