@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import images from '../../constants/images';
-import { FaInstagram, FaFacebook, FaBars, FaTimes } from 'react-icons/fa';
+import { FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
 import { motion, useAnimation } from 'framer-motion';
 import './Navbar.css';
 
@@ -46,7 +46,7 @@ function Navbar() {
             <motion.a animate={controls} href="/">
                 <img src={images.logo} className="logo" alt="Logo" />
             </motion.a>
-            <a className="icon" target='_blank' href='https://www.instagram.com/hausdesshawarmas/'><FaInstagram /></a>
+            <a className="icon" rel ="noreferrer" target='_blank' href='https://www.instagram.com/hausdesshawarmas/'><FaInstagram /></a>
         </motion.div>
     );
 }

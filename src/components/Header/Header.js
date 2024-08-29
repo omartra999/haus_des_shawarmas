@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import images from "../../constants/images";
 import './Header.css'
 import { motion, useAnimation } from "framer-motion"
 

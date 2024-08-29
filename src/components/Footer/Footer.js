@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 import images from '../../constants/images'; // Adjust the path as needed
 import './Footer.css';
 
@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="footer-social">
           <h4>Folgen Sie uns</h4>
           <div className="social-icons">
-            <a href="https://www.instagram.com/hausdesshawarmas/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/hausdesshawarmas/" target="_blank" rel = "noreferrer" aria-label="Instagram">
               <FaInstagram />
             </a>
           </div>
