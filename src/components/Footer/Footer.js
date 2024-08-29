@@ -13,10 +13,10 @@ const Footer = () => {
         <div className="footer-links">
           <h4>Schnellzugriff</h4>
           <ul>
-            <li><a href="#home">Startseite</a></li>
-            <li><a href="#about">Über uns</a></li>
-            <li><a href="#menu">Menü</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="/">Startseite</a></li>
+            <li><a href="/AboutUs">Über uns</a></li>
+            <li><a href="/Menu">Menü</a></li>
+            <li><a href="/Kontakt">Kontakt</a></li>
           </ul>
         </div>
         <div className="footer-contact">
@@ -27,10 +27,7 @@ const Footer = () => {
         <div className="footer-social">
           <h4>Folgen Sie uns</h4>
           <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <FaFacebook />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/hausdesshawarmas/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram />
             </a>
           </div>

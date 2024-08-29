@@ -1,0 +1,26 @@
+/* OpeningHours.css */
+
+.opening-hours {
+    flex: 0 0 300px; /* Fixed width for the opening hours container */
+    padding: 20px; /* Padding inside the opening hours container */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .opening-hours h2 {
+    font-size: 1.5rem; /* Font size for the opening hours heading */
+    color: #333; /* Darker color for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+    text-align: center; /* Center the heading text */
+    font-weight: 700; /* Bold font weight for the heading */
+  }
+  
+  .opening-hours p {
+    font-size: 1rem; /* Font size for the opening hours text */
+    line-height: 1.5; /* Line height for better readability */
+    color: #555; /* Medium gray color for the text */
+    text-align: center; /* Center the opening hours text */
+  }
+  

@@ -38,16 +38,15 @@ function Navbar() {
                         <FaTimes />
                     </span>
                 )}
-                <li><a href="#">Menü</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">Über uns</a></li>
+                <li><a href="/Menu">Menü</a></li>
+                <li><a href="/Kontakt">Kontakt</a></li>
+                <li><a href="/AboutUS">Über uns</a></li>
             </nav>
 
-            <motion.a animate={controls} href="#Home">
+            <motion.a animate={controls} href="/">
                 <img src={images.logo} className="logo" alt="Logo" />
             </motion.a>
-            <a className="icon" href='#'><FaFacebook /></a>
-            <a className="icon" href='#'><FaInstagram /></a>
+            <a className="icon" target='_blank' href='https://www.instagram.com/hausdesshawarmas/'><FaInstagram /></a>
         </motion.div>
     );
 }

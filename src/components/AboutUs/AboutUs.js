@@ -39,11 +39,11 @@ function AboutUs() {
           <img src={images.logo} alt="Logo" className="aboutUs-logo" />
         </div>
         <div className="text-content">
-          <h2 className="about-us-header">Über uns</h2>
+          <h2 className="about-us-title">Über uns</h2>
           <p className="about-us-text">
             Willkommen bei Haus des Shawarmas! Wir sind leidenschaftliche Feinschmecker, die es lieben, Ihnen authentische, köstliche Shawarma-Gerichte und mehr zu servieren. Unser Ziel ist es, jedem Besuch ein einzigartiges Geschmackserlebnis zu bieten. Entdecken Sie unsere vielfältige Speisekarte und genießen Sie frisch zubereitete Spezialitäten, die Ihre Geschmacksknospen verwöhnen werden.
           </p>
-          <a href="/ueber-uns" className="mehr-lesen-button">
+          <a href="/AboutUs" className="mehr-lesen-button">
             Mehr lesen
           </a>
         </div>

@@ -7,9 +7,12 @@ import hummus from '../assests/hummus.png';
 import besondere from '../assests/besondere.png';
 import taco from '../assests/taco.png';
 import menu from '../assests/menu.jpg';
+import menuCover from '../assests/menuCover.jpg';
+import menu01 from '../assests/menu01.png';
+import menu02 from '../assests/menu02.png';
 
 export default {
     logo, header,
     salad, sandwish,shawarma, hummus, besondere,
-    taco, menu,
+    taco, menu,menu01,menu02,menuCover
  };

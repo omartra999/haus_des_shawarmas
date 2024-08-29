@@ -54,7 +54,9 @@ function Besondere() {
         <p className="dish-description">
           {description}
         </p>
-        <a href="#menu" className="view-menu-button">Menü ansehen</a>
+        <a href="/Menu" className="view-menu-button">Menü ansehen</a>
+        <a href = "https://www.lieferando.de/speisekarte/haus-des-shawarmas" target='_blank' className='view-menu-button'>Lieferando</a>
+        <a href = "https://wolt.com/de/deu/essen/restaurant/haus-des-shawarmas?srsltid=AfmBOooewteHwiKqzaRyKMtbbDolarQChF6EUZnglFvy2sUno2GCqSGc" target='_blank' className='view-menu-button'>Wolt</a>
       </motion.div>
     </div>
   );

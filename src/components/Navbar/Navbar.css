@@ -116,4 +116,8 @@
   .close-menu:hover {
       color: #f0e68c; /* Hover color */
   }
+  .navbar img {
+     margin: 0 auto;
+     padding-bottom: 13px;
+  }
 }

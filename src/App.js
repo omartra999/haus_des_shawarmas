@@ -1,14 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Home } from './pages'
-import { BrowserRouter as Router, Route, Switch } from'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Home, Menu, AboutUs, Kontakt } from './pages'; // Make sure these components are properly exported from './pages'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Home />     
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Menu" element={<Menu />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/Kontakt" element={<Kontakt />} />
+          
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,18 @@
+.menu-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../../assests/background.jpg");
+
+}
+.menu-image img{
+    width: 35%;
+    margin: 0 auto;
+}
+
+@media (min-width:768px) {
+    .menu-image img{
+        width: 65%;
+    }
+    
+}
