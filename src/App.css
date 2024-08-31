@@ -1,33 +1,123 @@
-.root{
+/* Global Reset and Box Sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body,html {
+    font-family: 'Poppins', sans-serif; /* Default font for all text */
+    background-color: #f9f9f9; /* Background color for the section */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    width: 100%; /* Ensure body width does not exceed viewport */
+    min-height: 100vh; /* Make sure body takes at least full viewport height */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+.home-container {
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
 
+/* Root Container Styling */
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ensure full width of the viewport */
+    max-width: 1200px; /* Prevent the root from being too wide on larger screens */
+    padding: 0 20px; /* Add some horizontal padding for small screens */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
 
-body {
-    font-family: 'Poppins', sans-serif; /* Default font for all text */
-    background-color: #f9f9f9; /* Background color for the section */
-
-  }
-  
-  h1 {
-    font-family: 'Poppins', sans-serif; /* Apply the same font to h1 or choose a different one */
-    font-weight: 700; /* Use a bold font-weight for h1 */
-    font-size: 3em; /* Adjust size as needed */
-    color: #ffffff; /* White color for better visibility on a dark background */
-    text-transform: uppercase; /* Make text uppercase for a cool effect */
+/* Heading Styles */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    color: #ffffff;
+    text-transform: uppercase;
     margin: 0;
     padding: 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a slight shadow for a 3D effect */
-  }
-  
-  p {
-    font-size: 1.2em; /* Slightly increase font size for paragraphs */
-    color: #ffffff; /* Ensure paragraph text is readable */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Center align the heading */
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1.2em;
+    color: #ffffff;
     margin: 0;
     padding: 0;
-    line-height: 1.5; /* Increase line height for better readability */
-  }
-  
+    line-height: 1.5;
+    text-align: center; /* Center align paragraphs */
+    max-width: 90%; /* Prevent paragraphs from being too wide */
+}
+
+/* Global Image Styles */
+img {
+    max-width: 100%; /* Ensure images do not overflow their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Global Utility Classes */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Global Responsive Breakpoints */
+
+/* Tablet screens (max-width: 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Reduce heading size for smaller screens */
+    }
+
+    p {
+        font-size: 1em; /* Adjust paragraph font size */
+    }
+
+    .root {
+        padding: 0 10px; /* Adjust padding on smaller screens */
+    }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em; /* Further reduce heading size for mobile screens */
+    }
+
+    p {
+        font-size: 0.9em; /* Further reduce paragraph font size */
+    }
+
+    .root {
+        padding: 0 5px; /* Further reduce padding */
+    }
+}
+
+/* Very small devices (max-width: 320px) */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.8em; /* Smallest heading size for very small screens */
+    }
+
+    p {
+        font-size: 0.85em; /* Smallest paragraph font size */
+    }
+
+    .root {
+        padding: 0 3px; /* Smallest padding */
+    }
+}

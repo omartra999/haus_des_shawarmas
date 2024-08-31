@@ -6,6 +6,7 @@
     padding: 40px 20px;
     font-size: 0.9rem;
     text-align: center;
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
 .footer-content {
@@ -14,6 +15,7 @@
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
 .footer-logo {
@@ -21,6 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px; /* Add margin for spacing */
 }
 
 .footer-logo-img {
@@ -31,6 +34,7 @@
     flex: 1;
     margin: 0 20px;
     text-align: left;
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
 .footer-links h4, .footer-contact h4, .footer-social h4 {
@@ -84,4 +88,77 @@
 
 .footer-bottom {
     margin-top: 20px;
+    font-size: 0.8rem; /* Slightly smaller font for the bottom section */
+    color: #bbb; /* Lighter color for the bottom text */
+}
+
+/* Responsive styling for tablets and smaller screens */
+@media (max-width: 1024px) {
+    .footer-content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center-align items */
+    }
+
+    .footer-links, .footer-contact, .footer-social {
+        margin: 0 0 20px; /* Adjust margin for stacked items */
+        text-align: center; /* Center-align text for better readability */
+    }
+
+    .social-icons {
+        justify-content: center; /* Center the social icons */
+    }
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 10px; /* Adjust padding for mobile screens */
+    }
+
+    .footer-logo-img {
+        max-width: 120px; /* Adjust logo size for smaller screens */
+    }
+
+    .footer-links h4, .footer-contact h4, .footer-social h4 {
+        font-size: 1rem; /* Adjust font size for headings */
+    }
+
+    .footer-links a {
+        font-size: 0.9rem; /* Adjust font size for links */
+    }
+
+    .social-icons a {
+        font-size: 1.2rem; /* Adjust font size for social icons */
+    }
+
+    .footer-bottom {
+        font-size: 0.7rem; /* Further reduce font size for the bottom text */
+    }
+}
+
+/* Responsive styling for very small devices */
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 5px; /* Adjust padding for very small screens */
+    }
+
+    .footer-logo-img {
+        max-width: 100px; /* Further adjust logo size */
+    }
+
+    .footer-links, .footer-contact, .footer-social {
+        margin: 0 0 10px; /* Adjust margin for very small screens */
+    }
+
+    .footer-links a {
+        font-size: 0.8rem; /* Further reduce font size for links */
+    }
+
+    .social-icons a {
+        font-size: 1rem; /* Further reduce font size for social icons */
+    }
+
+    .footer-bottom {
+        font-size: 0.6rem; /* Further reduce font size for the bottom text */
+    }
 }

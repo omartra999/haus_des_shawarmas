@@ -7,10 +7,11 @@
     padding: 40px; /* Increased padding */
     max-width: 1400px; /* Increased max-width */
     margin: 0 auto;
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .dish-image {
-    box-shadow: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow with a bit of offset */
 }
 
 .image {
@@ -58,11 +59,14 @@
     font-weight: bold;
     display: inline-block;
     text-align: center;
+    transition: background-color 0.3s ease; /* Smooth color transition */
 }
 
 .view-menu-button:hover {
     background-color: #e67e22; /* Darker shade on hover */
 }
+
+/* Responsive styling for larger tablets and smaller desktops */
 @media (max-width: 1024px) {
     .dish-image {
         padding: 10px; /* Reduce padding */
@@ -73,11 +77,12 @@
     }
 }
 
+/* Responsive styling for tablets and smaller screens */
 @media (max-width: 768px) {
     .besondere-container {
         flex-direction: column; /* Stack image and content vertically */
         align-items: center; /* Center content horizontally */
-
+        padding: 20px; /* Reduce padding */
     }
 
     .dish-image {
@@ -90,14 +95,41 @@
 
     .dish-title {
         font-size: 2rem; /* Adjust font size for smaller screens */
+        text-align: center; /* Center align the title */
     }
 
     .dish-description {
         font-size: 1.2rem; /* Adjust font size for smaller screens */
+        text-align: center; /* Center align the description */
     }
 
     .view-menu-button {
         font-size: 16px; /* Adjust button font size */
         padding: 10px 20px; /* Adjust button padding */
+    }
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 480px) {
+    .header {
+        height: 60vh; /* Adjust height for smaller screens */
+    }
+
+    .besondere-container {
+        padding: 0; /* Further reduce padding */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center-align items */
+    }
+
+    .special-items-container {
+        grid-template-columns: 1fr; /* Single column layout for very small screens */
+    }
+
+    .special-item {
+        margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    .special-item-image {
+        width: 100%; /* Full width for image */
     }
 }

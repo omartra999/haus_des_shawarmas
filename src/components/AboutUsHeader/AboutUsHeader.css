@@ -1,12 +1,63 @@
-.about-us-header{
-    background-color: #2d2c2c;
+/* AboutUsHeader.css */
+
+/* Header container styling */
+.about-us-header {
+    background-color: #2d2c2c; /* Dark background color */
     display: flex;
-    justify-content: center;
-    height: 80vh;
-    width: 100vw;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 80vh; /* Height of the header */
+    width: 100vw; /* Full width of the viewport */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
 }
-.header_logo{
-    width: 15%;
-    height: 15%;
-    margin: auto 0;
+
+/* Logo styling */
+.header_logo {
+    width: 15%; /* Logo width relative to the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 200px; /* Maximum width for larger screens */
+    margin: auto; /* Center the logo */
+    transition: width 0.3s ease; /* Smooth transition for resizing */
+}
+
+/* Media queries for responsiveness */
+
+/* Tablet screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .about-us-header {
+        height: 60vh; /* Reduce height on smaller screens */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .header_logo {
+        width: 25%; /* Increase logo width relative to container */
+        max-width: 150px; /* Adjust maximum width */
+    }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .about-us-header {
+        height: 50vh; /* Further reduce height for mobile screens */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .header_logo {
+        width: 35%; /* Further increase logo width relative to container */
+        max-width: 120px; /* Adjust maximum width */
+    }
+}
+
+/* Very small devices (max-width: 320px) */
+@media (max-width: 320px) {
+    .about-us-header {
+        height: 40vh; /* Minimal height for very small screens */
+        padding: 5px; /* Minimal padding */
+    }
+
+    .header_logo {
+        width: 45%; /* Maximize logo width relative to container */
+        max-width: 100px; /* Adjust maximum width */
+    }
 }

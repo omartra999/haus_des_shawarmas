@@ -1,3 +1,4 @@
+/* Base styles for the navbar */
 .navbar {
   width: 100%;
   display: flex;
@@ -73,51 +74,113 @@
   scale: 1.2;
 }
 
+/* Tablet and larger screens */
 @media (max-width: 768px) {
   .app__nav {
-      display: flex; /* Show nav items on smaller screens */
-      flex-direction: column;
-      align-items: center;
-      background-color: #2d2c2c; /* Same as scrolled background */
-      position: fixed;
-      top: 0; /* Align to the top of the viewport */
-      left: 0; /* Align to the left of the viewport */
-      width: 100%;
-      height: 100vh; /* Cover the whole viewport height */
-      padding: 60px 0; /* Adjust padding to make space for the hamburger menu */
-      transform: translateY(-100%); /* Hide by default */
-      transition: transform 0.3s ease-in-out; /* Smooth animation */
-      z-index: 1001; /* Ensure dropdown is above other content */
+    display: flex; /* Show nav items on smaller screens */
+    flex-direction: column;
+    align-items: center;
+    background-color: #2d2c2c; /* Same as scrolled background */
+    position: fixed;
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    width: 100%;
+    height: 100vh; /* Cover the whole viewport height */
+    padding: 60px 0; /* Adjust padding to make space for the hamburger menu */
+    transform: translateY(-100%); /* Hide by default */
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+    z-index: 1001; /* Ensure dropdown is above other content */
   }
 
   .app__nav.app__nav--open {
-      transform: translateY(0); /* Show the menu */
+    transform: translateY(0); /* Show the menu */
   }
 
   .hamburger-menu {
-      display: block; /* Show hamburger menu on smaller screens */
+    display: block; /* Show hamburger menu on smaller screens */
   }
 
   .navbar a {
-      font-size: 18px; /* Smaller icons for smaller screens */
+    font-size: 18px; /* Smaller icons for smaller screens */
   }
 
   .close-menu {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 30px;
-      color: #ffffff;
-      cursor: pointer;
-      transition: color 0.3s;
-      z-index: 1002; /* Ensure it is above the menu content */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s;
+    z-index: 1002; /* Ensure it is above the menu content */
   }
 
   .close-menu:hover {
-      color: #f0e68c; /* Hover color */
+    color: #f0e68c; /* Hover color */
   }
+
   .navbar img {
-     margin: 0 auto;
-     padding-bottom: 13px;
+    margin: 0 auto;
+    padding-bottom: 13px;
+  }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: row
+  }
+
+  .app__nav {
+    font-size: 16px; /* Adjust font size for better readability on small screens */
+  }
+
+  .hamburger-menu {
+    font-size: 24px; /* Smaller hamburger menu icon */
+  }
+
+  .app__nav a {
+    font-size: 16px; /* Smaller font size for links */
+  }
+
+  .navbar img {
+    width: 60%;
+    height: auto; /* Keep aspect ratio */
+    margin-bottom: 15px; /* Space below the logo */
+  }
+
+  .navbar a {
+    font-size: 20px; /* Adjusted font size for mobile */
+  }
+  
+  .close-menu {
+    top: 10px; /* Adjusted position for close button */
+    right: 10px; /* Adjusted position for close button */
+  }
+}
+
+/* Additional responsiveness for very small devices (max-width: 320px) */
+@media (max-width: 320px) {
+  .app__nav a {
+    font-size: 14px; /* Even smaller font size for very small devices */
+  }
+
+  .app__nav{
+    width: 100vw;
+    justify-content: center; /*
+
+  }
+
+  .hamburger-menu {
+    font-size: 20px; /* Even smaller icon for small devices */
+  }
+
+  .navbar img {
+    width: 70%; /* Smaller logo size */
+    margin: 0 auto;
+  }
+
+  .navbar a {
+    font-size: 18px; /* Further reduced font size */
   }
 }

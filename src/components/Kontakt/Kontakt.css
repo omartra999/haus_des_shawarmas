@@ -36,19 +36,52 @@
 /* Styling for the map container */
 .map-container {
   width: 100%; /* Full width for responsiveness */
-  max-width: 600px; /* Maximum width for the map */
+  max-width: 100%; /* Full width for smaller screens */
   border-radius: 10px; /* Rounded corners for the map */
   overflow: hidden; /* Hide overflow to keep rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow around the map */
 }
 
 /* Responsive styling */
+@media (max-width: 1024px) {
+  .contact-section {
+    padding: 30px; /* Slightly reduced padding for tablets */
+  }
+
+  .contact-details h2 {
+    font-size: 1.8rem; /* Adjust heading font size for tablets */
+  }
+
+  .contact-details p {
+    font-size: 1rem; /* Adjust paragraph font size for tablets */
+  }
+}
+
 @media (max-width: 768px) {
   .contact-section {
-    padding: 20px; /* Reduce padding on smaller screens */
+    padding: 20px; /* Further reduce padding on smaller screens */
+    gap: 15px; /* Reduce space between elements */
+  }
+
+  .contact-details h2 {
+    font-size: 1.6rem; /* Adjust heading font size for mobile screens */
+  }
+
+  .contact-details p {
+    font-size: 0.9rem; /* Adjust paragraph font size for mobile screens */
   }
 
   .map-container {
-    max-width: 100%; /* Full width for smaller screens */
+    max-width: 100%; /* Full width for mobile screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-details h2 {
+    font-size: 1.4rem; /* Further adjust heading font size for very small screens */
+  }
+
+  .contact-details p {
+    font-size: 0.8rem; /* Further adjust paragraph font size for very small screens */
   }
 }

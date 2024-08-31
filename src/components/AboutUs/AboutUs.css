@@ -1,5 +1,6 @@
 /* AboutUs.css */
 
+/* Container for the "About Us" section */
 .about-us-container {
     display: flex;
     justify-content: center;
@@ -14,6 +15,7 @@
     will-change: transform, opacity; /* Hint to the browser to optimize these properties */
 }
 
+/* Content wrapper for text and logo/icons */
 .about-us-content {
     display: flex;
     align-items: center;
@@ -21,6 +23,7 @@
     max-width: 1200px; /* Adjust as needed */
 }
 
+/* Wrapper for logo and icons */
 .logo-and-icons {
     display: flex;
     flex-direction: column;
@@ -29,6 +32,7 @@
     margin-right: 40px; /* Space between logo/icons and text */
 }
 
+/* Styling for the logo */
 .aboutUs-logo {
     width: 100%; /* Increase the logo size */
     height: auto;
@@ -36,17 +40,20 @@
     z-index: 1; /* Ensure logo is above the icons */
 }
 
+/* Text content styling */
 .text-content {
     flex: 1;
     text-align: left;
 }
 
+/* Title styling */
 .about-us-title {
     font-size: 2rem;
     color: #fff;
     margin-bottom: 10px;
 }
 
+/* Paragraph text styling */
 .about-us-text {
     color: #ddd;
     font-size: 1rem;
@@ -54,6 +61,7 @@
     line-height: 1.5;
 }
 
+/* "Mehr Lesen" button styling */
 .mehr-lesen-button {
     background-color: #f39c12; /* Button background color */
     color: #fff; /* Text color */
@@ -66,6 +74,93 @@
     transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
+/* Hover effect for button */
 .mehr-lesen-button:hover {
     background-color: #e67e22; /* Darker shade on hover */
+}
+
+/* Media queries for responsiveness */
+
+/* Tablet screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .about-us-container {
+        padding: 15px; /* Reduce padding */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .about-us-content {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .logo-and-icons {
+        margin-right: 0; /* Remove margin on smaller screens */
+        margin-bottom: 20px; /* Add margin below logo/icons */
+    }
+
+    .about-us-title {
+        font-size: 1.8rem; /* Reduce font size for title */
+    }
+
+    .about-us-text {
+        font-size: 0.9rem; /* Reduce font size for text */
+    }
+
+    .mehr-lesen-button {
+        font-size: 14px; /* Reduce button font size */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .about-us-container {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .about-us-content {
+        width: 100%; /* Full width for content */
+    }
+
+    .aboutUs-logo {
+        width: 80%; /* Smaller logo size */
+    }
+
+    .about-us-title {
+        font-size: 1.5rem; /* Further reduce font size for title */
+    }
+
+    .about-us-text {
+        font-size: 0.85rem; /* Further reduce font size for text */
+        line-height: 1.4; /* Adjust line height */
+    }
+
+    .mehr-lesen-button {
+        font-size: 12px; /* Further reduce button font size */
+        padding: 6px 12px; /* Adjust button padding */
+    }
+}
+
+/* Very small devices (max-width: 320px) */
+@media (max-width: 320px) {
+    .about-us-container {
+        padding: 5px; /* Minimal padding */
+    }
+
+    .aboutUs-logo {
+        width: 70%; /* Even smaller logo size */
+    }
+
+    .about-us-title {
+        font-size: 1.3rem; /* Smaller font size for title */
+    }
+
+    .about-us-text {
+        font-size: 0.75rem; /* Smaller font size for text */
+    }
+
+    .mehr-lesen-button {
+        font-size: 10px; /* Smallest button font size */
+        padding: 5px 10px; /* Minimal padding */
+    }
 }

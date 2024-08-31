@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 .header {
   width: 100vw; /* Full width of the viewport */
   height: 100vh; /* Full height of the viewport */
@@ -9,20 +10,64 @@
   align-items: center; /* Vertically center the content */
   justify-content: center; /* Horizontally center the content */
   position: relative; /* Relative positioning for absolute children */
+  flex-direction: column; /* Stack content vertically by default */
+  padding: 20px; /* Padding for small spacing */
+  text-align: center; /* Center text alignment */
+  margin: 0 auto;
 }
 
 .header h1 {
-  color: #f0e68c;
-  font-size: 4em;
-  font-weight: 700;
-  margin: 0 auto;
-  text-align: center;
+  color: #f0e68c; /* Light yellow color */
+  font-size: 4em; /* Larger font size */
+  font-weight: 700; /* Bold font weight */
+  margin: 0 auto; /* Center horizontally */
+  text-align: center; /* Center text */
 }
 
 .header p {
-  color: #f0e68c;
-  font-size: 1.5em;
-  font-weight: 600;
-  margin: 0 auto;
-  margin-left: 1em;
+  color: #f0e68c; /* Light yellow color */
+  font-size: 1.5em; /* Medium font size */
+  font-weight: 600; /* Semi-bold font weight */
+  margin: 0 auto; /* Center horizontally */
+  margin-left: 1em; /* Small left margin */
+  text-align: center; /* Center text */
+}
+
+/* Media query for tablets (768px and smaller) */
+@media (max-width: 768px) {
+  .header {
+    height: 100vh; /* Let content dictate height */
+    padding: 40px 20px; /* Increased padding for better spacing */
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .header h1 {
+    font-size: 1em; /* Slightly smaller font size */
+  }
+
+  .header p {
+    font-size: 1.2em; /* Slightly smaller font size */
+    margin-left: 0; /* Remove left margin */
+  }
+}
+
+/* Media query for mobile devices (480px and smaller) */
+@media (max-width: 480px) {
+  .header {
+    width: 100vw;
+    padding: 0;
+    height: 80vh;
+  }
+  .header h1 {
+    font-size: 2em; /* Smaller font size for mobile */
+    background-size: cover;
+    padding: 0;
+  }
+
+  .header p {
+    font-size: 1em;
+    text-align: center;
+    font-size: 0.8em;
+}
 }

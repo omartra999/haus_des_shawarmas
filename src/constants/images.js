@@ -10,8 +10,10 @@ import menu from '../assests/menu.jpg';
 import menu01 from '../assests/menu01.png';
 import menu02 from '../assests/menu02.png';
 
-export default {
+const images = {
     logo, header,
     salad, sandwish,shawarma, hummus, besondere,
     taco, menu,menu01,menu02
  };
+
+ export default images;

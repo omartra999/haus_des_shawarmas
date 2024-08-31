@@ -35,7 +35,7 @@ function Spezielle() {
     <div className="spezielle" ref={ref}>
       <motion.h2
         animate={controls}
-        initial={{ opacity: 0, x: -50 }}
+        initial={{ opacity: 0, x: 50 }}
         className="special-title"
       >
         Spezielles Angebot
