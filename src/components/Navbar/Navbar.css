@@ -136,7 +136,11 @@
   }
 
   .hamburger-menu {
-    font-size: 24px; /* Smaller hamburger menu icon */
+    font-size: 24px;
+    margin-left: 1em; /* Smaller hamburger menu icon */
+  }
+  .icon{
+    margin-right: 1em;
   }
 
   .app__nav a {
@@ -144,9 +148,9 @@
   }
 
   .navbar img {
-    width: 60%;
-    height: auto; /* Keep aspect ratio */
-    margin-bottom: 15px; /* Space below the logo */
+    width: 80%;
+    height: 70%; /* Keep aspect ratio */
+    margin: 0 auto; /* Space below the logo */
   }
 
   .navbar a {
