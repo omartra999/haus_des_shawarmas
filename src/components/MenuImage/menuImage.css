@@ -6,13 +6,38 @@
 
 }
 .menu-image img{
-    width: 35%;
+    width: 60%;
     margin: 0 auto;
 }
-
-@media (min-width:768px) {
-    .menu-image img{
-        width: 65%;
+@media (max-width: 768px) {
+    .menu-image {
+        margin-top: 50%;
+        margin-bottom: 50%;
+        flex-direction: column; /* Ensure images stack on smaller devices */;
+        width: 100vw; /* Full viewport width */
+        height: 100vh; /* Full viewport height */
     }
-    
+
+    .menu-image img {
+        width: 100vw; /* Full width of viewport */
+        height: 100vh; /* Full height of viewport */
+        object-fit: cover; /* Cover the entire screen without stretching */
+    }
+}
+
+/* Adjust styles for very small devices (max-width: 320px) */
+@media (max-width: 320px) {
+    .menu-image {
+        margin-top: 30%;
+        margin-bottom: 30%;
+        flex-direction: column; /* Ensure images stack on smaller devices */;
+        width: 100vw; /* Full viewport width */
+        height: 100vh; /* Full viewport height */
+    }
+
+    .menu-image img {
+        width: 100vw; /* Full width of viewport */
+        height: 100vh; /* Full height of viewport */
+        object-fit: cover; /* Cover the entire screen without stretching */
+    }
 }

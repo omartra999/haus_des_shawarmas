@@ -29,7 +29,7 @@
 @media (max-width: 768px) {
   .opening-hours {
       flex: 1 1 auto; /* Allow the container to grow and shrink on smaller screens */
-      width: 90%; /* Full width with some margin */
+      width: fit-content; /* Full width with some margin */
       max-width: 500px; /* Maximum width for smaller screens */
       margin: 0 auto; /* Center the container */
       padding: 15px; /* Reduce padding */

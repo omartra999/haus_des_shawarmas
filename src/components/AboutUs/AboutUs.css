@@ -179,8 +179,8 @@
     }
 
     .aboutUs-logo {
-        width: 70%; /* Even smaller logo size */
-        max-width: 120px; /* Limit maximum width */
+        width: 100%; /* Even smaller logo size */
+        max-width: 100vw /* Limit maximum width */
     }
 
     .about-us-title {
@@ -191,11 +191,14 @@
     .about-us-text {
         font-size: 0.75rem; /* Smaller font size for text */
         margin: 8px 0; /* Space around the text */
+        margin: 0 auto;
+        margin-bottom: 10%;
     }
 
     .mehr-lesen-button {
         font-size: 10px; /* Smallest button font size */
         padding: 5px 10px; /* Minimal padding */
-        margin: 10px 0; /* Space around the button */
+        margin-left: 35%; /* Space around the button */
+        margin-bottom: 10%;
     }
 }

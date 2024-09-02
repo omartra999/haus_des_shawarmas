@@ -56,6 +56,26 @@
 @media (max-width: 480px) {
   .header {
     width: 100vw;
+    height: 100vh;
+    padding: 0;
+    height: 80vh;
+  }
+  .header h1 {
+    font-size: 2em; /* Smaller font size for mobile */
+    background-size: cover;
+    padding: 0;
+  }
+
+  .header p {
+    font-size: 1em;
+    text-align: center;
+    font-size: 0.8em;
+}
+}
+@media (max-width: 320px) {
+  .header {
+    width: 100vw;
+    height: 100vh;
     padding: 0;
     height: 80vh;
   }
