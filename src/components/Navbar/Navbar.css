@@ -94,6 +94,8 @@
 
   .app__nav.app__nav--open {
     transform: translateY(0); /* Show the menu */
+    display: flex;
+    justify-content: center;
   }
 
   .hamburger-menu {

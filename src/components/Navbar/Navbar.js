@@ -38,6 +38,7 @@ function Navbar() {
                         <FaTimes />
                     </span>
                 )}
+                <li><a href="/">Home</a></li>
                 <li><a href="/Menu">Menü</a></li>
                 <li><a href="/Kontakt">Kontakt</a></li>
                 <li><a href="/AboutUS">Über uns</a></li>
