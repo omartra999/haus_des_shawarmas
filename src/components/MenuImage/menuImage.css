@@ -28,7 +28,6 @@
 /* Adjust styles for very small devices (max-width: 320px) */
 @media (max-width: 320px) {
     .menu-image {
-        margin-top: 15%;
         margin-bottom: 30%;
         flex-direction: column; /* Ensure images stack on smaller devices */;
         width: 100vw; /* Full viewport width */
