@@ -1,14 +1,14 @@
-import logo from '../assests/logo.png';
-import header from '../assests/header.png';
-import salad from '../assests/salat.png';
-import sandwish from '../assests/sandiwsh.png';
-import shawarma from '../assests/shawarma.png';
-import hummus from '../assests/hummus.png';
-import besondere from '../assests/besondere.png';
-import taco from '../assests/taco.png';
-import menu from '../assests/menu.jpg';
-import menu01 from '../assests/menu01.png';
-import menu02 from '../assests/menu02.png';
+import logo from '../assests/logo.webp';
+import header from '../assests/header.webp';
+import salad from '../assests/salat.webp';
+import sandwish from '../assests/sandiwsh.webp';
+import shawarma from '../assests/shawarma.webp';
+import hummus from '../assests/hummus.webp';
+import besondere from '../assests/besondere.webp';
+import taco from '../assests/taco.webp';
+import menu from '../assests/menu.webp';
+import menu01 from '../assests/menu01.webp';
+import menu02 from '../assests/menu02.webp';
 
 const images = {
     logo, header,

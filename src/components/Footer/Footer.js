@@ -17,6 +17,7 @@ const Footer = () => {
             <li><a href="/AboutUs">Über uns</a></li>
             <li><a href="/Menu">Menü</a></li>
             <li><a href="/Kontakt">Kontakt</a></li>
+            <li><a href="/Impressum">Impressum</a></li>
           </ul>
         </div>
         <div className="footer-contact">

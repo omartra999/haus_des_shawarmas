@@ -1,0 +1,70 @@
+
+.impressum-container {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stacked layout for smaller screens */
+    align-items: center; /* Center-align items */
+    padding: 40px; /* Padding around the section */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 0 auto; /* Center the section with some margin */
+    max-width: 1200px; /* Maximum width for large screens */
+    gap: 20px; /* Space between elements */
+    text-align: center; /* Center-align text */
+  
+}
+  
+  
+  .impressum-container h2 {
+    font-size: 2rem; /* Larger font size for the heading */
+    color: #333; /* Darker color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: 700; /* Bold font weight */
+  }
+  
+  .impressum-container p {
+    font-size: 1.1rem; /* Font size for the contact details */
+    line-height: 1.6; /* Line height for readability */
+    color: #555; /* Medium gray color */
+    margin-bottom: 20px; /* Space below the text */
+  }
+  
+  @media (max-width: 1024px) {
+    .impressum-container {
+      padding: 30px; /* Slightly reduced padding for tablets */
+    }
+  
+    .impressum-container h2 {
+      font-size: 1.8rem; /* Adjust heading font size for tablets */
+    }
+  
+    .impressum-container p {
+      font-size: 1rem; /* Adjust paragraph font size for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .impressum-container {
+      padding: 20px; /* Further reduce padding on smaller screens */
+      gap: 15px; /* Reduce space between elements */
+    }
+  
+    .impressum-container h2 {
+      font-size: 1.6rem; /* Adjust heading font size for mobile screens */
+    }
+    
+  
+    .impressum-container p {
+      font-size: 0.9rem; /* Adjust paragraph font size for mobile screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .impressum-container h2 {
+      font-size: 1.4rem; /* Further adjust heading font size for very small screens */
+    }
+  
+    .impressum-container p {
+      font-size: 0.8rem; /* Further adjust paragraph font size for very small screens */
+    }
+  }

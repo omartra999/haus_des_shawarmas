@@ -9,6 +9,7 @@ import Footer from "./Footer/Footer";
 import MenuImage from "./MenuImage/MenuImage";
 import OpeningHours from "./OpeningHours/OpeningHours";
 import Kontakt from "./Kontakt/Kontakt";
+import Impressum from "./Impressum/Impressum";
 
 export {
     Navbar,
@@ -21,6 +22,7 @@ export {
     AboutUsHeader,
     AboutUsSection,
     OpeningHours,
-    Kontakt
+    Kontakt,
+    Impressum,
  };
 
