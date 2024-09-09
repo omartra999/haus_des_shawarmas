@@ -6,11 +6,11 @@ import "./Spezielle.css";
 
 // Updated items array
 const items = [
-  { img: images.salad, text: "Fresh Salad", description: "frische salat" },
-  { img: images.sandwish, text: "Sandwich", description: "leckeres baguette" },
-  { img: images.shawarma, text: "Shawarma", description: "das beste was es gibt" },
-  { img: images.taco, text: "Tacos", description: "auch tacos haben wir" },
-  { img: images.hummus, text: "Hummus", description: "wer kennt hummus nicht?" }
+  { img: images.salad, text: "Taboule", description: "Petersilie, Tomaten, Bulgur, Zitrone, Olivenöl" },
+  { img: images.sandwish, text: "Philadelphial Baguette", description: "Fleisch, Pilze, Paprika, Salat Mayo, Käse, Zwiebeln" },
+  { img: images.shawarma, text: "Shawarma Teller", description: "Hänchen-Shawarma, Pommes, Knoblauch-Dip, saure Gurken, Salat, Gurken" },
+  { img: images.taco, text: "Tacos", description: "Verschiedene Sorten: Fajita, Mexikanische, ....." },
+  { img: images.hummus, text: "Hummus", description: "Kichererbsen, Tahini, Zitronensaft, Knoblauch, Olivenöl, Salz, Kreuzkümmel" }
 ];
 
 function Spezielle() {
