@@ -1,42 +1,43 @@
-.menu-image{
+.menu-image {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     background-image: url("../../assests/background.jpg");
-
+    overflow-y: auto; /* Enable scrolling on smaller devices */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    height: 100vh; /* Full viewport height */
 }
-.menu-image img{
+
+.menu-image img {
     width: 60%;
     margin: 0 auto;
+    object-fit: contain;
 }
+
 @media (max-width: 768px) {
     .menu-image {
-        margin-top: 50%;
-        margin-bottom: 50%;
-        flex-direction: column; /* Ensure images stack on smaller devices */;
-        width: 100vw; /* Full viewport width */
-        height: 100vh; /* Full viewport height */
+        width: 100vw; /* Full width of viewport */
+        height: auto; /* Adjust height based on content */
     }
 
     .menu-image img {
         width: 100vw; /* Full width of viewport */
-        height: 100vh; /* Full height of viewport */
-        object-fit: cover; /* Cover the entire screen without stretching */
+        object-fit: contain; /* Maintain image aspect ratio */
+        margin-bottom: 20px; /* Add some space between images */
     }
 }
 
-/* Adjust styles for very small devices (max-width: 320px) */
 @media (max-width: 320px) {
     .menu-image {
-        margin-bottom: 30%;
-        flex-direction: column; /* Ensure images stack on smaller devices */;
-        width: 100vw; /* Full viewport width */
-        height: 100vh; /* Full viewport height */
+        width: 100vw;
+        height: auto;
     }
 
     .menu-image img {
-        width: 100vw; /* Full width of viewport */
-        height: 100vh; /* Full height of viewport */
-        object-fit: cover; /* Cover the entire screen without stretching */
+        width: 100vw;
+        height: auto; /* Adjust height based on the aspect ratio */
+        object-fit: contain; /* Ensure full image is visible */
+        margin-bottom: 10px;
     }
 }

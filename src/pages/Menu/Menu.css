@@ -1,7 +1,55 @@
 .menu{
-    height: 100vh;
     width: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+.menu-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../../assests/background.jpg");
+    overflow-y: auto; /* Allow vertical scrolling for all images */
+    overflow-x: hidden;
+}
+
+.menu-image img {
+    width: 60%;
+    margin: 10px auto; /* Ensure there's space around each image */
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .menu-image {
+        width: 100vw; /* Full width of viewport */
+        height: auto; /* Adjust height based on content */
+    }
+
+    .menu-image img {
+        width: 100vw; /* Ensure each image takes up full width */
+        height: auto; /* Ensure no image is cut off */
+        object-fit: contain; /* Maintain aspect ratio */
+        margin-bottom: 2px; /* Space between images */
+    }
+}
+
+@media (max-width: 320px) {
+    .menu-image {
+        width: 100vw; /* Full width of viewport */
+        height: auto; /* Adjust height based on content */
+    }
+
+    .menu-image img {
+        width: 100vw; /* Full width of viewport */
+        height: auto; /* Prevent image height restrictions */
+        object-fit: contain; /* Maintain aspect ratio without cutting off images */
+        margin-bottom: 10px; /* Space between images */
+    }
+}
+
+.footer {
+    margin-top: auto; /* Ensure footer is pushed to the bottom */
+    width: 100%; /* Full width */
+}
