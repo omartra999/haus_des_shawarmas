@@ -9,7 +9,7 @@ const Impressum = () => {
                 45130 Essen</p>
             <br />
             <p>Geschäftsführer: Basel Madarati</p>
-            <p>Telefon: +49 0176 18 35 81 75</p>
+            <p>Telefon: +49 0176 18358175</p>
         </div>
     )}
     export default Impressum

@@ -81,7 +81,7 @@
 
   .map-container {
     max-width: 100%; /* Full width for mobile screens */
-    margin: 0 auto; /*
+    margin: 0 auto; 
   }
 }
 
@@ -96,7 +96,7 @@
   .map-container{
     max-width: 100vw;
     width: 70%;
-    height: 200px; /* Adjust map height for very small screens */
+    height: 55vh; /* Adjust map height for very small screens */
   }
 
   .map-container iframe{

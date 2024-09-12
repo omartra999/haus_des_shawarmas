@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="footer-contact">
           <h4>Kontaktieren Sie uns</h4>
           <p> Rüttenscheider Str. 105, 45130 Essen</p>
-          <p>Telefon: 0201 31972777</p>
+          <p>Telefon: 0176 18358175</p>
         </div>
         <div className="footer-social">
           <h4>Folgen Sie uns</h4>

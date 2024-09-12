@@ -17,7 +17,7 @@ function Kontakt() {
         <p>
           Rüttenscheider Str. 105, 45130 Essen
           <br />
-          Telefon: 0201 31972777
+          Telefon: 0176 18358175
         </p>
 
         {/* Reusing the OpeningHours component */}
