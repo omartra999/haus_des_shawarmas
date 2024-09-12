@@ -36,6 +36,8 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <p>&copy; 2024 Haus des Shawarmas. Alle Rechte vorbehalten.</p>
+        <p>Webseite erstellt von <b>Omar Trabulsi</b></p>
+        <p>E-mail: omartra069@gmail.com, Telefon: 01521 1865394</p>
       </div>
     </footer>
   );
